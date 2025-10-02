@@ -1,0 +1,263 @@
+/* Estilos generales */
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    font-size: large;
+}
+
+/* Estilos del header */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #006699;
+    padding: 10px 20px;
+}
+
+/* Estilo para el logo fuera de la lista */
+.logo {
+    display: inline-block;
+    padding: 10px;
+}
+
+.logo img {
+    width: auto; /* Ajusta el tamaño del logo */
+    height: auto; /* Mantén la proporción de la imagen */
+    border-radius: 10px;
+}
+
+/* Estilo de la barra de navegación */
+.barranav ul {
+    list-style-type: none; 
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.barranav ul li {
+    margin-right: 10px;
+}
+
+.barranav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 24px;
+    padding: 10px 20px;
+    background-color: #004466;
+    border-radius: 10px;
+    display: inline-block;
+}
+
+/* Se activa cuando el usuario pasa el mouse sobre el menú */
+.barranav ul li a:hover {
+    background-color: skyblue;
+}
+
+h1{
+    text-align: center;
+
+}
+/* Estilos del main */
+main {
+    padding: 20px;
+    background-color: white;
+    margin: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo del div de descripción */
+.descripcion {
+    background-color: #004466;
+    color: white;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 5px;
+    border: 5px dotted white;
+}
+
+/* Estilo del div de objetivos */
+.objetivos {
+    background-color: #004466;
+    color: white;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 5px;
+    border: 5px dotted white;
+
+}
+
+/* Estilo del div de actividades */
+.actividades {
+    background-color: #004466;
+    color: white;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 5px;
+    justify-content: center;
+}
+
+/* tamaño de las imagenes dentro del div Actividades*/
+.actividades img {
+    width: 300px;
+    height: auto;
+}
+
+/* Estilo para las actividades de ACAP, por ej: Junior, Kiosco, etc.. */
+.junior {
+    background-color: #589597;
+    color: white;
+    margin: 30px;
+    padding: 30px;
+    border-radius: 70px;
+    text-align: center;
+}
+.kiosco{
+    background-color: #589597;
+    color: white;
+    margin: 30px;
+    padding: 30px;
+    border-radius: 70px;
+    text-align: center;
+}
+
+.fiat{
+    background-color: #589597;
+    color: white;
+    margin: 30px;
+    padding: 30px;
+    border-radius: 70px;
+    text-align: center;
+}
+
+.nuevosaires{
+    background-color: #589597;
+    color: white;
+    margin: 30px;
+    padding: 30px;
+    border-radius: 70px;
+    text-align: center;
+}
+
+.pulseras{
+    background-color: #589597;
+    color: white;
+    margin: 30px;
+    padding: 30px;
+    border-radius: 70px;
+    text-align: center;
+}
+
+/*div donde irán los videos*/
+
+.experiencias{
+    background-color: #004466;
+    color: white;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 5px;
+
+}
+
+.experiencias video {
+    width: 30%; /* Los videos ocuparán el 30% del ancho del contenedor */
+    margin-bottom: 20px; /* Espacio entre filas de videos */
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Añade una sombra alrededor de los videos */
+    margin-left: 25px;
+}
+
+video {
+    width: 400px;
+    height: 260px;
+  }
+
+
+/* Estilos del footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    bottom: 0;
+    width: 100%;
+}
+
+/* estilos de la página galeria.html */
+.galeria {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px; /* Añade espacio entre las imágenes */
+    padding: 20px;
+}
+
+.galeria img {
+    width: 300px;
+    height: 200px;
+    object-fit: cover; /* Asegura que las imágenes se escalen manteniendo proporciones y rellenen el espacio */
+    margin: 10px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+}
+
+.galeria img:hover {
+    border-color: #333;
+    transform: scale(1.5);
+}
+
+/* Aplica box-sizing: border-box globalmente */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* Estilos para el contenedor principal que organiza las secciones en 2x2 */
+.contenedor {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Dos columnas de igual tamaño */
+    gap: 20px; /* Espacio entre las cajas */
+    max-width: 800px; /* Ancho máximo reducido del contenedor */
+    margin: 0 auto; /* Centrar el contenedor en la página */
+}
+
+/* Estilos de las cajas */
+.informacion, .contacto, .ubicacion1, .ubicacion2 {
+    border: 2px solid red;
+    border-radius: 30px;
+    padding: 20px;
+  
+}
+
+/* Colores específicos */
+.informacion, .ubicacion2 {
+    background-color: #004466;
+    color: white;
+}
+
+.contacto, .ubicacion1 {
+    background-color: white;
+    color: black;
+}
+
+/* Ajuste para iframe y elementos internos para que no sobresalgan */
+.informacion iframe,
+.ubicacion1 iframe,
+.ubicacion2 iframe,
+.informacion img,
+.contacto img {
+    max-width: 100%; /* Que no exceda el ancho del contenedor */
+    height: auto; /* Mantiene la proporción de la altura */
+    display: block;
+}
+.contacto img {
+    width: 150px; /* Cambia el tamaño según lo desees */
+    height: auto; /* Mantiene la proporción */
+}
